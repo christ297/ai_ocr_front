@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Moon, UploadCloud, Loader2 } from "lucide-react";
 
 export default function App() {
-  const baseUrl = "http://127.0.0.1:8000";
+  const baseUrl = "https://push-latest.onrender.com";
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -109,10 +109,3 @@ export default function App() {
   );
 }
 
-// Loader animé
-const SkeletonLoader = () => (
-  <div className="animate-pulse space-y-4">
-    <div className="h-6 w-40 bg-gray-700 rounded"></div>
-    <div className="h-4 w-32 bg-gray-600 rounded"></div>
-  </div>
-);
